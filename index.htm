@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-1/Homework</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .row {
+        display: flex;
+        width: 100%;
+      }
+      .column-1 {
+        width: 15%;
+        border-right: 1px solid gray;
+        background-color: #f8f9fa;
+      }
+      .column-2 {
+        width: 65%;
+      }
+      .column-3 {
+        width: 20%;
+        background-color: #f8f9fa;
+      }
+      /* left-column */
+      .column-1 * {
+        margin: 0;
+        padding: 0;
+      }
+      .column-1 ul {
+        list-style-type: none;
+        margin: 20px 0;
+      }
+      .column-1 a {
+        text-decoration: none;
+        color: #0645ad;
+        cursor: pointer;
+      }
+      .column-1 a:hover {
+        text-decoration: underline;
+      }
+      .column-1 li {
+        margin: 0 20px;
+      }
+      .column-1 .fa-brands{
+        margin: 5px 25px;
+        color: gray;
+      }
+      .column-1 .li-header {
+        color: grey;
+        border-bottom: 1px solid gray;
+      }
+
+
+      /* middle-column */
+      .column-2 h1 {
+        padding: 5px 0;
+        text-align: center;
+        margin: 0;
+      }
+      .column-2 p {
+        padding: 5px 25px;
+      }
+      .column-2 p a {
+        text-decoration: none;
+        color: #0645ad;
+      }
+      .column-2 .contents {
+        border: 1px solid #a2a9b1;
+        width: 40%;
+        margin: 0 25px;
+        background-color: #f8f9fa;
+      }
+      .column-2 ol { 
+        counter-reset: item;
+       }
+       .column-2 li { 
+        display: block 
+      }
+      .column-2 li:before { 
+        content: counters(item, ".") " "; counter-increment: item }
+      .column-2 li a {
+        text-decoration: none;
+        color: #0645ad;
+      }
+      .column-2 li a:hover {
+        text-decoration: underline;
+      }
+
+      /* right-column */
+      .column-3 table {
+        border-collapse: collapse;
+      }
+      .column-3 .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 10px;
+      }
+      .column-3 .img-1 {
+        width: 90%;
+      }
+      .column-3 .img-2 {
+        width: 80%;
+      }
+      .column-3 div {
+        text-align: center;
+    }
+      .column-3 div a {
+        text-align: center;
+        text-decoration: none;
+      }
+      .column-3 table tr {
+        border: 1px solid #a2a9b1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="row">
+        <div class="column-1">
+          <i class="fa-brands fa-wikipedia-w fa-5x"></i>
+          <ul>
+            <li><a href="">Ana Səhifə</a></li>
+            <li><a href="">Kənd Meydanı</a></li>
+            <li><a href="">İcmal portalı</a></li>
+            <li><a href="">Son dəyişikliklər</a></li>
+            <li><a href="">Təsadüfi məqalə</a></li>
+          </ul>
+          <ul>
+            <li class="li-header">Layihələr</li>
+            <li><a href="">Seçilmiş məqalələr</a></li>
+            <li><a href="">Seçilmiş siyahılar</a></li>
+            <li><a href="">Seçilmiş portallar</a></li>
+            <li><a href="">Yaxşı məqalələr</a></li>
+            <li><a href="">Məqalə namizədləri</a></li>
+            <li><a href="">Mövzulu ay</a></li>
+          </ul>
+          <ul>
+            <li class="li-header">Xüsusi</li>
+            <li><a href="">Əlaqə səhifəsi</a></li>
+            <li><a href="">Maddi kömək</a></li>
+            <li><a href="">Kömək</a></li>
+          <ul>
+            <li class="li-header">Alətlər</li>
+            <li><a href="">Fayl yüklə</a></li>
+            <li><a href="">Xüsusi səhidələr</a></li>
+            <li><a href="">Çap versiyası</a></li>
+          </ul>
+        </div>
+        <div class="column-2">
+          <h1>Azərbaycan</h1>
+          <hr>
+          <p><i>Vikipediya, azad ensiklopediya</i></p>
+          <p>
+           <b>Azərbaycan</b> və ya rəsmi adı ilə <strong>Azərbaycan Respublikası</strong> — Cənubi
+            Qafqazda yerləşən dövlət. Azərbaycan Xəzər dənizi hövzəsinin
+            qərbində yerləşir. Şimaldan <a href="https://gag.wikipedia.org/wiki/Rusiya">Rusiya</a>  (Dağıstan), şimal-qərbdən
+            <a href="https://gag.wikipedia.org/wiki/G%C3%BCrc%C3%BCstan">Gürcüstan</a>, qərbdən <a href="https://az.wikipedia.org/wiki/Erm%C9%99nistan">Ermənistan</a>, cənub-qərbdən <a href="https://az.wikipedia.org/wiki/T%C3%BCrkiy%C9%99">Türkiyə</a> və cənubdan
+            <a href="https://az.wikipedia.org/wiki/%C4%B0ran">İran</a> (Güney Azərbaycan) ilə həmsərhəddir. Azərbaycanın anklavı olan
+            Naxçıvan Muxtar Respublikası Ermənistanla şimal-şərqdə, İranla
+            (Güney Azərbaycan) qərbdə və Türkiyə ilə şimal-qərbdən həmsərhəddir.
+            Azərbaycan ərazisinin bir hissəsi (Dağlıq Qarabağ bölgəsi və ona
+            bitişik 7 inzibati rayon) 1988–1994-cü illərdə Ermənistan tərəfindən
+            işğal olunmuş və burda heç bir ölkə tərəfindən tanınmayan qondarma
+            Dağlıq Qarabağ Respublikası yaradılmışdır. Uzunsürən sülh
+            danışıqları nəticəsiz qalmış və 2020-ci il 27 sentyabrda Azərbaycan
+            Respublikası Silahlı Qüvvələri tərəfindən əks-hücum əməliyyatı ilə
+            torpaqların bir hissəsi azad edilmiş və 10 noyabr Bakı vaxtı ilə
+            01:00 — da imzalanan üçtərəfli bəyanat ilə başa çatmışdır. Dövlət
+            sərhədləri cənubdan İranla 765 km, Türkiyə ilə 15, şimaldan Rusiya
+            ilə 391 km, şimal-qərbdən Gürcüstan ilə 471 km, qərbdən Ermənistan
+            ilə 1007 km həmsərhəddir. Onun 825 km-i su sərhəddidir.Sahil
+            xəttinin uzunluğu 713 km-dir. Azərbaycanın Xəzər dənizi sektorunda
+            həmçinin Türkmənistan, Qazaxıstan, İran və Rusiya ilə sərhədə
+            malikdir.
+          </p>
+          <div class="contents">
+          <ol>
+            <li><a href="">Etimologiya</a></li>
+            <li><a href="">Tarix</a>
+                <ol start="2.1">
+                  <li><a href="">Qədim dövr</a></li>
+                  <li><a href="">Feodal dövr</a></li>
+                  <li><a href="">Yeni dövr</a>
+                    <ol>
+                      <li><a href="">Azərbaycan Xalq Cumhuriyyəti</a></li>
+                      <li><a href="">Sovet İttifaqının tərkibində</a></li>
+                      <li><a href="">Üçüncü Respublika dövrü</a></li>
+                    </ol>
+                  </li>
+                </ol>
+            </li>
+            <li><a href="">Hökümət və siyasət</a></li>
+            <li><a href="">Xarici siyasət və ordu</a></li>
+            <li><a href="">İnzibati bölgü</a></li>
+          </ol>
+          </div>
+        </div>
+        <div class="column-3">
+          <table>
+            <tr>
+              <th>
+                <div style="text-align: center;">
+                  <b>Republic of Azerbaijan</b>
+                  <br>
+                  <i>Azərbaycan Respublikası  (Azerbaijani)</i>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="img">
+                <div>
+                  <img class="img-1" src="aze-flag.png" alt="">
+                  <p><a href="">Flag</a></p>
+                </div>
+                <div>
+                  <img class="img-2" src="aze-emblem.png" alt="">
+                  <p><a href="">National emblem</a></p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;">
+                <h4 style="margin: 0; padding: 0;">Anthem</h4>
+                <p><a style="text-decoration: none;" href=""><i>Azərbaycan marşı</i></a></p>
+                <p>"March of Azerbaijan"</p>
+                <audio style="width: 250px; height:25px;" controls>
+                  <source src="aze-hymn.mp3" type="audio/mpeg">
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div style="margin: 10px auto;">
+                 <img style="width: 90%;" src="globus.png" alt="">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
